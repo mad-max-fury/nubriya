@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.empty_brown {
+  height: 10%;
+  width: 100%;
+  background-color: #965000;
+}
+main {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.head {
+  position: absolute;
+  top: 12%;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 25%;
+}
+.profile {
+  height: 100%;
+  width: 14%;
+  border-radius: 16px;
+  background-color: #965000;
+  border: 5px solid gainsboro;
+}
+.sub_status {
+  position: relative;
+  left: 60%;
+  top: 10%;
+  font-weight: bold;
+}
+.nav_container {
+  height: 64%;
+  width: 89%;
+  border-radius: 1rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 5px solid gainsboro;
+  background-color: #965000;
+  position: absolute;
+  /* border-bottom: 0; */
+  top: 36%;
+  right: 0%;
+  z-index: 2;
+  display: flex;
+}
+.textId {
+  position: absolute;
+  top: 1%;
+  left: 17%;
+  /* border: 1px solid yellow; */
+}
+.inner_nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header {
+  margin-bottom: 2%;
+  color: whitesmoke;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+#nav > button {
+  /* border: 1px solid green; */
+  width: fit-content;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  color: white;
+  display: block;
+  background-color: #965000;
+  z-index: 4;
+}
+.active {
+  background-color: gainsboro !important;
+  color: #965000 !important;
+  transition: all 1s;
+}
+.current_display {
+  width: 100%;
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 40%;
+  width: 90%;
+  height: 50%;
+  display: grid;
+  grid-template-rows: repeat(1, auto);
+}
+table {
+  border-collapse: collapse;
+  align-items: center;
+}
+th {
+  text-decoration: underline;
+}
+tr {
+  align-items: center;
+  text-align: center;
+}
+.btn {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: #965000;
+  color: white;
+  margin: 10px;
+  align-self: center;
+  border-radius: 7px;
+}
+.btn1 {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: #965000;
+  color: white;
+  margin: 10px;
+  align-self: center;
+  border-radius: 7px;
+}
+.registered {
+  display: table;
+}
+.completed_course {
+  display: none;
+}
+.postponed_course {
+  display: none;
+}
+.titled {
+  text-decoration: underline;
+}
+.Blog {
+  display: none;
+}
+
+p {
+  margin: 10px;
+}
+.titled {
+  margin-bottom: 16px;
+}
+.learnMore {
+  font-weight: bold;
+  position: relative;
+  left: 90%;
+  border: 1px solid gray;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+}
+.learnMore:hover {
+  background-color: #965000;
+  color: white;
+  transition: all 2s;
+}
