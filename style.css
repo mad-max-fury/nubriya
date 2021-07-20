@@ -4,20 +4,25 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
-  height: 100vh;
+  width: fit-content;
+
   display: flex;
   flex-direction: column;
+  background-color: #dbe4ea;
 }
 .empty_brown {
-  height: 10%;
+  height: 8vh;
   width: 100%;
-  background-color: #965000;
+  background-color: #754c28;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 20px;
+  color: gainsboro;
 }
 main {
   width: 90%;
   margin: auto;
-  height: 100%;
+  height: 85vh;
 }
 .head {
   position: absolute;
@@ -25,21 +30,64 @@ main {
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 25%;
+  height: 30%;
 }
 .profile {
   height: 100%;
   width: 14%;
   border-radius: 16px;
-  background-color: #965000;
+  background-color: #754c28;
   border: 5px solid gainsboro;
 }
-.sub_status {
-  position: relative;
-  left: 60%;
-  top: 10%;
-  font-weight: bold;
+
+#profileImage {
+  height: inherit;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  color: transparent;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
 }
+#imageUpload {
+  display: none;
+}
+.sub_status {
+  height: 30vh;
+
+  font-weight: bold;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sub_inner_ {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.sub_status > div {
+  display: flex;
+  align-items: center;
+}
+.viewAll {
+  width: 8rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  margin-left: 20px;
+  box-shadow: 4px 4px 3px -2px rgb(206, 205, 205), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.viewAll:hover {
+  background-color: #754c28;
+  color: white;
+  transition: all 2s;
+}
+
 .nav_container {
   height: 64%;
   width: 89%;
@@ -47,7 +95,7 @@ main {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   border: 5px solid gainsboro;
-  background-color: #965000;
+  background-color: #754c28;
   position: absolute;
   /* border-bottom: 0; */
   top: 36%;
@@ -59,6 +107,7 @@ main {
   position: absolute;
   top: 1%;
   left: 17%;
+  color: hsl(32, 70%, 21%);
   /* border: 1px solid yellow; */
 }
 .inner_nav {
@@ -86,21 +135,21 @@ main {
   border: 1px solid gainsboro;
   color: white;
   display: block;
-  background-color: #965000;
+  background-color: #754c28;
   z-index: 4;
 }
 .active {
   background-color: gainsboro !important;
-  color: #965000 !important;
+  color: #754c28 !important;
   transition: all 1s;
 }
 .current_display {
   width: 100%;
   /* border: 1px solid green; */
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: 90%;
-  height: 50%;
+  height: 45%;
   display: grid;
   grid-template-rows: repeat(1, auto);
 }
@@ -118,7 +167,7 @@ tr {
 .btn {
   width: fit-content;
   padding: 0.5rem;
-  background-color: #965000;
+  background-color: #754c28;
   color: white;
   margin: 10px;
   align-self: center;
@@ -127,7 +176,7 @@ tr {
 .btn1 {
   width: fit-content;
   padding: 0.5rem;
-  background-color: #965000;
+  background-color: #754c28;
   color: white;
   margin: 10px;
   align-self: center;
@@ -146,7 +195,14 @@ tr {
   text-decoration: underline;
 }
 .Blog {
-  display: none;
+  height: 50vh;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  align-self: center;
+  /* border: 1px solid red; */
 }
 
 p {
@@ -159,13 +215,16 @@ p {
   font-weight: bold;
   position: relative;
   left: 90%;
-  border: 1px solid gray;
+
   width: fit-content;
+
+  border-radius: 20px;
   padding: 10px;
-  border-radius: 5px;
+  box-shadow: 0 -3em 3em rgb(0 0 0 / 20%), 0 0 0 1px rgb(117 76 40),
+    0.3em 0.3em 1em rgb(117 76 40 / 90%);
 }
 .learnMore:hover {
-  background-color: #965000;
+  background-color: #754c28;
   color: white;
   transition: all 2s;
 }

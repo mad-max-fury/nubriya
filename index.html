@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <title>Nubriya</title>
 </head>
 
@@ -14,9 +16,9 @@
   <main>
     <div class="head" id="main">
       <div class="profile">
-        <input type="file" name="image" id="" placeholder="Upload Picture">
+        <image id="profileImage" placeholder="upload profile pic" src="http://lorempixel.com/100/100" />
+        <input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" required="" capture>
       </div>
-      <div class="sub_status">Subscription : <span id="stateValue" style="color: green;"> Inactive</span></div>
       <div class="textId">
         <h1>Popoola Abdulrahim Babatunde</h1>
         <small id="email">ibnimanrahim001@gmail.com</small>
@@ -25,13 +27,13 @@
 
         <div class="inner_nav">
           <div class="header">
-            <h2>NUBYIRA LEARNING</h2>
+            <h2>Nubyira Learning</h2>
           </div>
           <div id="nav">
             <button class="nav_elem1 " id="nav1">Registered Course List</button>
             <button class="nav_elem2" id="nav2"> Completed Course List</button>
             <button class="nav_elem3" id="nav3">Postponed Course List</button>
-            <button class="nav_elem4" id="nav4">Blog</button>
+
           </div>
         </div>
       </div>
@@ -47,6 +49,8 @@
               <th>Course Date</th>
               <th>Course Timing</th>
               <th> Registration Status</th>
+              <th></th>
+              <th></th>
             </tr>
           </thead>
           <tbody class="body1">
@@ -59,7 +63,11 @@
               <td>01:00GMT- 02:00GMT daily</td>
               <td>
                 <div>Completed</div>
+              </td>
+              <td>
                 <div class="btn">View detail</div>
+              </td>
+              <td>
                 <div class="btn"> Cancel Registration</div>
               </td>
             </tr>
@@ -71,8 +79,9 @@
               <td>01:00GMT- 02:00GMT daily</td>
               <td>
                 <div>Awaiting payment</div>
+              </td>
+              <td>
                 <div class="btn">complete payment</div>
-
               </td>
             </tr>
           </tbody>
@@ -92,10 +101,15 @@
               <td>NLAPBCO1001</td>
               <td>5</td>
               <td>4</td>
+
+              <td>
+                <div>Completed</div>
+              </td>
+              <td>
+                <div>Certificate is Available</div>
+              </td>
               <td class="dis_row">
                 <div class="btn1"> Print certificate for Participant</div>
-                <div>Completed</div>
-                <div>Certificate is Available</div>
               </td>
             </tr>
             <tr class="reg_row2">
@@ -125,8 +139,9 @@
               <td>150USD</td>
               <td class="dis_row">
                 <div>Valid</div>
+              </td>
+              <td>
                 <div class="btn1"> Activate Course Registration</div>
-
               </td>
             </tr>
             <tr class="reg_row2">
@@ -135,35 +150,61 @@
               <td>150USD</td>
               <td>
                 <div>expired</div>
+
+              </td>
+              <td>
                 <div class="btn1"> Activate Course Registration</div>
               </td>
             </tr>
           </tbody>
         </table>
-        <div class="Blog">
-          <div class="titled">Save Blog Posts</div>
-          <div class="blog1">
-            <h43 class="heading">HOW IMPORTANT IS PROCESS DESIGN I CHEMICAL PROCESSING INDUSTRIES ?</h43>
-            <P>Technology continue to advance daily. This is because problems emerge day in and out and there is a need
-              to
-              solve them through innovative and creative approaches. Demand for new products to meet these nees is
-              increasing rapidily, hence the need for design through the process.</P>
-            <p>Design is the creation of a plan for the construction process of a system or products to fulfill a
-              particular need, public or commercial use.</p>
-            <p>In the realm of chemical, process design can be defined as the selection and sequential arrangement of
-              unit
-              operations</p>
-          </div>
-          <div class="learnMore">Learn more</div>
-        </div>
-
-
       </div>
       <!-- <div class="sub_status"></div> -->
     </div>
+
   </main>
-  <div class="empty_brown"></div>
-  <script src="script.js"></script>
+  <div class="empty_brown">
+    <h3>Nubyira Project Subscription</h3>
+  </div>
+
+  <div class="sub_status">
+    <h4>Have full access to Nubriya Project report and reference files</h4>
+    <div>
+      <div class="sub_inner_">Subscription Status: <span id="stateValue" style="color: green;"> Inactive</span></div>
+
+
+      <button class="viewAll">
+        View All
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="empty_brown">
+    <h3>Nubyira Blog</h3>
+  </div>
+  <div class="Blog">
+    <div class="titled">Save Blog Posts</div>
+    <div class="blog1">
+      <h43 class="heading">HOW IMPORTANT IS PROCESS DESIGN I CHEMICAL PROCESSING INDUSTRIES ?</h43>
+      <P>Technology continue to advance daily. This is because problems emerge day in and out and there is a need
+        to
+        solve them through innovative and creative approaches. Demand for new products to meet these nees is
+        increasing rapidily, hence the need for design through the process.</P>
+      <p>Design is the creation of a plan for the construction process of a system or products to fulfill a
+        particular need, public or commercial use.</p>
+      <p>In the realm of chemical, process design can be defined as the selection and sequential arrangement of
+        unit
+        operations</p>
+    </div>
+    <div class="learnMore">Learn more</div>
+  </div>
+  <div class="empty_brown">
+
+  </div>
+
 </body>
 
 </html>
